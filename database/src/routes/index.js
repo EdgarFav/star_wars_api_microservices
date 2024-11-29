@@ -30,7 +30,7 @@ router.post("/:model", validateModel, async (req, res) => {
 //   res.status(200).json(response);
 // });
 
-// router.get("/film", async (req, res) => {  >>>>>>>>>>>>> De manera individual se puede hacer asi
+// router.get("/film", async (req, res) => {  --> De manera individual se puede hacer asi
 //   const response = await Film.list();
 //   res.status(200).json(response);
 // });

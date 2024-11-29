@@ -7,11 +7,15 @@ module.exports = {
   // },
   list: async () => {
     const films = await axios.get("http://database:8004/Film");
+    // const films = await axios.get("http://localhost:8004/Film");
+
     return films.data;
   },
 
   get: async (id) => {
     const film = await axios.get(`http://database:8004/Film/${id}`);
+    // const film = await axios.get(`http://localhost:8004/Film/${id}`);
+
     return film.data;
   },
 

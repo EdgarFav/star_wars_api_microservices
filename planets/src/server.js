@@ -1,10 +1,13 @@
 const express = require("express");
+const swaggerUi = require("swagger-ui-express");
 const morgan = require("morgan");
+const specs = require("./swagger/swagger");
 
 const server = express();
 
 server.use(morgan("dev"));
 server.use(express.json());
+server.use("/planets/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 server.use("/planets", require("./routes"));
 
