@@ -10,7 +10,7 @@ const options = {
         },
         servers: [
             {
-                url: "http://104.154.230.18:8000/characters/api-docs",
+                url: "http://104.154.230.18:8000",
                 description: "Production server",
             }
         ],
